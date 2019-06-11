@@ -72,7 +72,7 @@ We've provided you with a console that you can use to test your code. To enter a
 - `Restaurant.find_by_name(name)`
   - given a string of restaurant name, returns the first restaurant that matches
 
-#### Build out the following methods on the `Review` class
+#### Build out the following methods on the `Review` class    ####   REVIEW  #####
 
 - `Review#customer`
   - returns the customer object for that given review
