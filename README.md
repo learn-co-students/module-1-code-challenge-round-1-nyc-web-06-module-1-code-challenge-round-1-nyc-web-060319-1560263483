@@ -39,7 +39,7 @@ We've provided you with a console that you can use to test your code. To enter a
 #### Customer
 
 - `Customer#add_review(restaurant, content, rating)`
-  - given a **restaurant object**, some review content (as a string), and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
+  <!-- - given a **restaurant object**, some review content (as a string), and a star rating (as an integer), creates a new review and associates it with that customer and restaurant. -->
 - `Customer#num_reviews`
   - Returns the total number of reviews that a customer has authored
 - `Customer#restaurants`
