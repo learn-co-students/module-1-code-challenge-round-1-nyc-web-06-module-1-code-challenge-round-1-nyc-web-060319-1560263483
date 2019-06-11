@@ -9,5 +9,9 @@ class Review
         @content = content
         @@all << self
     end
+
+    def self.all
+        @@all
+    end
 end
 

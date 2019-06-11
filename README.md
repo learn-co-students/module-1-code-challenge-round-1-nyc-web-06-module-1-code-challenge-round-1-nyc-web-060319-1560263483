@@ -62,25 +62,25 @@ We've provided you with a console that you can use to test your code. To enter a
 
 <!-- - `Customer.find_by_name(name)`
   - given a string of a **full name**, returns the **first customer** whose full name matches -->
-<!-- - `Customer.find_all_by_first_name(name)`
-  - given a string of a first name, returns an **array** containing all customers with that first name -->
-- `Customer.all_names`
-  - should return an **array** of all of the customer full names
+    <!-- - `Customer.find_all_by_first_name(name)`
+    - given a string of a first name, returns an **array** containing all customers with that first name -->
+<!-- - `Customer.all_names`
+  - should return an **array** of all of the customer full names -->
 
 #### Build out the following method on the `Restaurant` class
 
-- `Restaurant.find_by_name(name)`
-  - given a string of restaurant name, returns the first restaurant that matches
+<!-- - `Restaurant.find_by_name(name)`
+  - given a string of restaurant name, returns the first restaurant that matches -->
 
 #### Build out the following methods on the `Review` class
 
 - `Review#customer`
-  - returns the customer object for that given review
-  - Once a review is created, I should not be able to change the author
+  <!-- - returns the customer object for that given review -->
+  <!-- - Once a review is created, I should not be able to change the author -->
 - `Review#restaurant`
-  - returns the restaurant object for that given review
-  - Once a review is created, I should not be able to change the restaurant
+  <!-- - returns the restaurant object for that given review -->
+  <!-- - Once a review is created, I should not be able to change the restaurant -->
 - `Review#rating`
-  - returns the star rating for a restaurant. This should be an integer from 1-5
+  <!-- - returns the star rating for a restaurant. This should be an integer from 1-5 -->
 - `Review#content`
-  - returns the review content, as a string, for a particular review
+  <!-- - returns the review content, as a string, for a particular review -->

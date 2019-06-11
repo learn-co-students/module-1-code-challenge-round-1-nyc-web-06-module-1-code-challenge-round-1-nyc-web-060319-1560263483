@@ -12,6 +12,13 @@ failure = false
 
 customer1 = Customer.new("Alex", "Virga")
 
+if Customer.all.class == Array
+  puts "Customer.all is an Array.".green
+else
+  puts "Customer.all is NOT an Array.".red
+  failure = true
+end
+
 if Customer.all.find { |cust| cust.first_name == "Alex"} != nil
   puts 'Customer.all is good.'.green
 else
@@ -138,6 +145,47 @@ if Customer.find_all_by_first_name("Alex") == [customer1, customer3]
   puts "Customer.find_all_by_first_name is good.".green
 else
   puts "Customer.find_all_by_first_name is bad.".red
+  failure = true
+end
+
+if Customer.all_names == ["Alex Virga", "Annie Mester", "Alex Riccio"]
+  puts "Customer.all_names is good.".green
+else
+  puts "Customer.all_names is bad.".red
+  failure = true
+end
+
+if Restaurant.find_by_name("Pizza Park") == restaurant2
+  puts "Restaurant.find_by_name is good.".green
+else
+  puts "Restaurant.find_by_name is bad.".red
+  failure = true
+end
+
+if Review.all[0].customer == customer1
+  puts "Review#customer is good.".green
+else
+  puts "Review#customer is bad.".red
+  failure = true
+end
+
+if Review.all[0].restaurant == restaurant1
+  puts "Review#restaurant is good.".green
+else
+  puts "Review#restaurant is bad.".red
+end
+
+if Review.all[0].rating == 5
+  puts "Review#rating is good.".green
+else
+  puts "Review#rating is bad.".red
+  failure = true
+end
+
+if Review.all[0].content == "Good pasta & sauce"
+  puts "Review#content is good.".green
+else
+  puts "Review#content is bad.".red
   failure = true
 end
 

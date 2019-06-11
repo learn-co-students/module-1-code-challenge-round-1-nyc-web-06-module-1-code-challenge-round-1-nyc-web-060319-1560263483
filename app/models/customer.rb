@@ -45,4 +45,10 @@ class Customer
     all_found = @@all.find_all{ |customer| customer.first_name == first_name }
     all_found
   end
+
+  def self.all_names
+    @@all.map do |cust|
+      cust.full_name
+    end
+  end
 end

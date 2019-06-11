@@ -46,4 +46,8 @@ class Restaurant
     longest.content
   end
 
+  def self.find_by_name(name)
+    found = @@all.find{ |rest| rest.name == name}
+    found
+  end
 end
